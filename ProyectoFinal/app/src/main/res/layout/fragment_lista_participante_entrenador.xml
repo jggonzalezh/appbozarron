@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Este es el layout del fragmento  DetallesDePersonajeFragment-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
+        android:layout_margin="1dp"
+        card_view:cardCornerRadius="5dp"
+
+
+        android:id="@+id/nombre_entrena_l">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_entrena_l"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/adele_cir"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="1dp"/>
+
+           <!-- <ImageView
+                android:id="@+id/img_entrena_l"
+                android:src="@mipmap/ic_equipo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:maxHeight="10dp"
+                android:layout_marginLeft="20dp"
+
+                />-->
+            <TextView
+                android:id="@+id/lbl_nombre_entrena_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_toRightOf="@+id/img_entrena_l"
+                android:textSize="24px"
+                android:text="Nombre:"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt_nombre_entrena_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_nombre_entrena_l"
+                android:layout_toRightOf="@+id/img_entrena_l"
+                android:textSize="24px"
+                android:text="Nombre del entrenador"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listaParticipantesEntrenador"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        />
+
+
+</LinearLayout>
+

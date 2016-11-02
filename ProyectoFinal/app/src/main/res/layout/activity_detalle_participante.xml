@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Es el layout de la actividad DetalleDePersonajeActivity -->
+<!--Este es el fragmento  etalleDePersonajeFragment -->
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmento_detalle_participante"
+    class="co.edu.uniquindio.android.electiva.proyectofinal.fragments.DetalleParticipanteFragment"
+    android:layout_width="match_parent"     android:layout_height="match_parent" />

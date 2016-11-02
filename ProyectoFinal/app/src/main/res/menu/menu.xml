@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Es el menu del appbar-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:id="@+id/menu_agregar"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="1"
+        android:title="Agregar participante"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_modificar"
+        android:orderInCategory="3"
+        android:title="Modificar Participante"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_eliminar"
+        android:orderInCategory="2"
+        android:title="Eliminar participante"
+        app:showAsAction="never" />
+</menu>

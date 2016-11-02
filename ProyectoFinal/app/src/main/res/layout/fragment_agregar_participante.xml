@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_name"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_gravity="center" android:orientation="vertical"
+    android:background="@color/colorUq"
+    >
+
+    <TextView
+        android:id="@+id/lbl_nombre_a" android:text="Nombre:"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/txt_nombre_a"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/btn_fecha_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_fecha"
+        android:drawablePadding="5dp"
+        android:text="Seleccione fecha de nacimiento"
+        android:background="@color/boton_tr"
+        android:textColor="@color/white"
+        />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/lbl_url_a" android:text="URL:"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/android_red"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/txt_url_a"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textUri"
+        />
+
+
+
+    <Button
+        android:text="Agregar Participante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_agregar"
+        android:background="@color/boton_tr"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
